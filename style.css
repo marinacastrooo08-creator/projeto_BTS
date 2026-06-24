@@ -58,7 +58,7 @@ body {
 .banner {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("/img/BTS_Banner.jpg");
+        url("https://assets.portalleodias.com/2024/04/BTS-Army_-Forever-We-Are-Young_-fas-do-grupo-de-K-pop-ganham-documentario.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

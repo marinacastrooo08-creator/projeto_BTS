@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!--MENU-->
+    <nav class="menu">
+        <div class="logo">🎶BTS</div>
+
+
+        <div class="links">
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Produtos</a>
+            <a href="#promocoes">Promoções</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+
+    <!--BANNER-->
+    <section id="inicio" class="banner">
+        <div class="banner-conteudo">
+            <h1>O Melhor Grupo Sul-Coreano do Mundo</h1>
+            <p>
+                O grupo consolidou-se como um dos maiores fenômenos globais da música.
+
+            </p>
+
+
+            <a href="#cardapio" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+
+
+    <!--CARDÁPIO-->
+    <section id="cardapio" class="cardapio">
+
+
+        <h2>Nossos Jogos</h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+                <img src="/img/Camisa1.jpeg" alt="X-Burger">
+
+
+                <h3>Camisa</h3>
+
+                <span>R$ 15,99</span>
+                <button onclick="adicionarPedido('X-burger',15.99)">
+                    Adicionar ao Pedido
+                </button>
+
+            </div>
+
+
+
+            <div class="cards">
+
+
+                <div class="card">
+                    <img src="/img/Kit.jpeg" alt="X-Bacon">
+
+
+                    <h3>Kit Calça e Camisa </h3>
+
+                    <span>R$ 36,86</span>
+                    <button onclick="adicionarPedido('X-Bacon', 36.86)">
+                        Adcionar ao Pedido
+                    </button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <img src="/img/Moletom.jpeg" alt="Duplo Burger">
+
+
+                <h3>Moletom</h3>
+
+                <span>R$ 20,00</span>
+                <button onclick="adicionarPedido('Duplo Grill', 20.00)">
+                    Adcionar ao Pedido
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--CARRINHO-->
+    <section class="carrinho">
+        <h2>Meu Pedido</h2>
+
+        <ul id="lista-pedido"></ul>
+
+
+        <p class="total">
+            Total: R$ <span id="total">0,00</span>
+        </p>
+
+
+        <button onclick="finalizarPedido()">
+            Finalizar Pedido
+        </button>
+    </section>
+
+
+    <script src="script.js"></script>
+
+
+    <!--PROMOÇÕES-->
+    <section id="promocoes" class="promocoes">
+
+
+        <h2>Promoção da Semana</h2>
+
+
+        <div class="promo-box">
+            <h3>Compre 3</h3>
+
+
+            <p>
+                Camisas e acessórios
+            </p>
+
+
+            <h1>R$ 100,99</h1>
+        </div>
+    </section>
+
+    <!--DIFERENCIAIS-->
+    <section id="diferenciais" class="diferenciais">
+        <h2>Porque Escutar BTS?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>J-Hope</h3>
+            </div>
+    </section>
+
+    <!--GALERIA-->
+    <section id="galeria" class="galeria">
+
+        <h2>Galeria</h2>
+
+        <div class="fotos">
+            <img src="/img/Galeriakkkk.jpeg">
+            <img src="/img/WhatsApp Image 2026-06-22 at 14.19.24.jpeg">
+            <img src="/img/WhatsApp Image 2026-06-22 at 14.19.04.jpeg">
+        </div>
+    </section>
+
+
+
+    <!--SOBRE-->
+    <section id="sobre" class="sobre">
+
+
+        <h2>Sobre o Grupo BTS</h2>
+
+
+        <p>
+            BTS, também conhecido como Bangtan Boys, é um grupo masculino sul-coreano formado em 2010. O grupo consiste
+            em sete integrantes: Jin, Suga, J-Hope, RM, Jimin, V e Jungkook, os quais coescrevem e coproduzem grande
+            parte do seu material.
+        </p>
+
+    </section>
+
+
+    <!--AVALIAÇÕES-->
+    <section class="avaliacoes">
+
+
+        <h2>O que nossos clientes dizem</h2>
+
+
+        <div class="depoimentos">
+
+            <div class="depoimento">
+                ⭐⭐⭐⭐⭐
+                <p>
+                    "QUE GRUPO EXELENTE GENTEEE!!"
+                </p>
+            </div>
+
+            <div class="depoimento">
+                ⭐⭐⭐⭐⭐
+                <p>
+                    "Eu adoro as musicas deles"
+                </p>
+            </div>
+
+
+            <div class="depoimento">
+                ⭐⭐⭐⭐⭐
+                <p>
+                    "SÃO OS MELHORES."
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- CONTATO -->
+
+    <section id="contato" class="contato">
+
+        <h2>Entre em Contato</h2>
+
+        <form>
+
+            <input type="text" placeholder="Seu nome" required>
+
+            <input type="email" placeholder="E-mail" required>
+
+            <textarea rows="5" placeholder="Sua mensagem">
+        </textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+    </section>
+
+
+
+    <!--RODAPÉ-->
+
+    <footer>
+        <h3>🎶BTS</h3>
+
+        <p>
+            📞 (11) 4004-2859
+        </p>
+
+        <p>
+            ⏰ Terça a Domingo - 18h às 23h
+        </p>
+        <p>
+            © 2026 - Todos os direitos reservados
+        </p>
+
+    </footer>
+
+    <!--BOTÃO WHATSAPP-->
+
+    <a href="https://wa.me/5511999999999" class="whatsapp" target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
